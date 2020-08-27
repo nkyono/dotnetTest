@@ -30,8 +30,8 @@ namespace testApp
                 configuration.RootPath = "ClientApp/build";
             });
 
-            services.AddEntityFrameworkNpgsql().AddDbContext<RedditDbContext>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("RedditDbContext")));
+            /*services.AddEntityFrameworkNpgsql().AddDbContext<RedditDbContext>(options =>
+                options.UseNpgsql(Configuration.GetConnectionString("RedditDbContext")));*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
